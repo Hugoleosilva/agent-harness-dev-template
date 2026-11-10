@@ -57,8 +57,9 @@
     3. [FIXER]     Patch only the exact failure, then return to the Validator.
     Limits: maximum 3 Fixer iterations. If still failing, STOP, show the failing output and the
     hypothesis tree, and ask the human. Never weaken or delete a test to make it pass.
-    For high-risk work (auth, payments, migrations, crypto), recommend a fresh-context review
-    (new session or sub-agent) in addition to the self-validation.
+    For high-risk work (auth, payments, migrations, crypto), self-validation is not enough: before
+    declaring done, tell the human to run `.agent-harness/REVIEW_PROMPT.md` in a fresh session or
+    sub-agent, and do not mark the task complete until that review is addressed.
   </multi_agent_protocol>
 
   <safety_and_permissions>

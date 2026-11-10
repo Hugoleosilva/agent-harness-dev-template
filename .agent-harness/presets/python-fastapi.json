@@ -1,0 +1,11 @@
+{
+  "development_type": "Backend API",
+  "stack": ["Python 3.12", "FastAPI", "Pydantic", "pytest"],
+  "architectural_pattern": "Hexagonal: domain/ (pure Python), services/ (use cases), adapters/ (DB, HTTP), routes/ (thin controllers)",
+  "validation_commands": {
+    "lint": "ruff check .",
+    "compile": "mypy .",
+    "test": "pytest -q"
+  },
+  "specific_constraints": "Type hints everywhere. Pydantic models at the boundary. No secrets in code; read from environment."
+}

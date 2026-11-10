@@ -15,6 +15,8 @@ O objetivo deste harness é desacoplar totalmente o **comportamento e a governan
 ├── .agent-harness/
 │   ├── AGENTS_CORE.md         # Princípios Universais (KISS, Clean Code, Protocolo Multi-Agente)
 │   ├── SETUP_PROMPT.md        # Prompt inicial para ativação do Setup Wizard
+│   ├── REVIEW_PROMPT.md       # Revisão independente (sessão nova) para trabalho de alto risco
+│   ├── presets/               # .agentconfig.json prontos: Next.js, FastAPI, Kotlin/Android
 │   ├── changelog/
 │   │   └── updates.md         # Histórico datado de alterações
 │   ├── mcp/
@@ -86,6 +88,12 @@ graph TD
     class A4 fixer;
     class S1,C1,PROD system;
 ```
+
+---
+
+## ⚠️ Limites Honestos
+
+Tags XML e instruções em inglês melhoram a obediência e reduzem custo de tokens, mas **não eliminam alucinações nem garantem 100% de conformidade**. A segurança real vem dos comandos de validação executados, dos limites de iteração e da revisão humana. Para auth, pagamentos e migrations, rode também `.agent-harness/REVIEW_PROMPT.md` em uma sessão nova.
 
 ---
 

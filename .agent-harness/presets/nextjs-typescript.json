@@ -1,0 +1,11 @@
+{
+  "development_type": "Web application",
+  "stack": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  "architectural_pattern": "Clean Architecture: domain/ (pure TS), application/ (use cases), infrastructure/ (DB, APIs), app/ (UI only)",
+  "validation_commands": {
+    "lint": "npm run lint",
+    "compile": "npx tsc --noEmit",
+    "test": "npm test"
+  },
+  "specific_constraints": "TypeScript strict mode. No business logic in components. Validate all external input (e.g. zod)."
+}

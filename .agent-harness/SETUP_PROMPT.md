@@ -1,4 +1,4 @@
-Initialize workspace protocol. Act as an Interactive Setup Wizard. First read `.agent-harness/AGENTS_CORE.md` and `.agentconfig.json`. If `development_type` is not "PENDING_SETUP", tell me the project is already configured and ask whether to reconfigure. Do not write any codebase files yet. Ask me 5 questions sequentially (one by one, waiting for my answer each time):
+Initialize workspace protocol. Act as an Interactive Setup Wizard. First read `.agent-harness/AGENTS_CORE.md` and `.agentconfig.json`. If `development_type` is not "PENDING_SETUP", tell me the project is already configured and ask whether to reconfigure. Do not write any codebase files yet. Check `.agent-harness/presets/`: if one matches my idea, offer it first; if I accept, load it into `.agentconfig.json`, ask only question 1 and 3, and skip the rest. Otherwise ask me 5 questions sequentially (one by one, waiting for my answer each time):
 
 1. What specific application, system, or model are we building? (Main business concept/idea).
 2. What tech stack do you want to use? (If undecided, recommend options and explain pros, cons and performance trade-offs. Answer in my language.)

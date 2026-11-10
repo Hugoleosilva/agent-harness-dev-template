@@ -1,0 +1,11 @@
+{
+  "development_type": "Mobile application (Android)",
+  "stack": ["Kotlin", "Jetpack Compose", "Coroutines", "Hilt"],
+  "architectural_pattern": "Clean Architecture + MVVM: domain/ (pure Kotlin), data/ (repositories, Room, Retrofit), ui/ (Compose + ViewModels)",
+  "validation_commands": {
+    "lint": "./gradlew lint ktlintCheck",
+    "compile": "./gradlew assembleDebug",
+    "test": "./gradlew testDebugUnitTest"
+  },
+  "specific_constraints": "No work on the main thread. Avoid leaking Context/Activity in ViewModels. Hoist state in Compose."
+}
