@@ -1,0 +1,9 @@
+{
+  "_note": "Optional. Merge into mcp-config.json only if the project uses PostgreSQL. Use a READ-ONLY database user. Check that the server package is still maintained before use. Variable expansion syntax (${VAR}) depends on your client; Claude Code supports it in .mcp.json.",
+  "mcpServers": {
+    "postgres-inspector": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "${MCP_POSTGRES_URL}"]
+    }
+  }
+}

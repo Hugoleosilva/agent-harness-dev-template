@@ -1,0 +1,11 @@
+{
+  "development_type": "PENDING_SETUP",
+  "stack": [],
+  "architectural_pattern": "Enforced by prompt setup",
+  "validation_commands": {
+    "lint": "",
+    "compile": "",
+    "test": ""
+  },
+  "specific_constraints": ""
+}
